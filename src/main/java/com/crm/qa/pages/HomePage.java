@@ -11,7 +11,7 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 	
-	@FindBy(xpath="//td[contains(text(),'User: Naveen K')]")
+	@FindBy(xpath="//td[contains(text(),'User: rohanw1')]")
 	WebElement nameDisplay;
 	
 	@FindBy(xpath="//a[contains(text(),'Contacts')]")

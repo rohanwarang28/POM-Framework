@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import org.apache.poi.ss.usermodel.Row;
@@ -18,6 +19,9 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.remote.server.handler.GetScreenOrientation;
 
 import com.crm.qa.base.TestBase;
 
@@ -87,6 +91,16 @@ public class TestUtil extends TestBase{
 }
 
 
+    
+    public static void takeScreenShotAtEndOfTest() throws IOException{
+    	 /*File scrFile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    	 FileUtils.copyFile(scrFile, new File("D:\\my_workspace\\FreeCRMTests\\error screenshots\\"+System.currentTimeMillis()+".png"));
+    */
+    	TakesScreenshot ts=(TakesScreenshot)driver;
+    	File source=ts.getScreenshotAs(OutputType.FILE);
+    	FileUtils.copyFile(source, new File("./error screenshots/"+System.currentTimeMillis()+".png"));
+    	
+    }
 
 
     

@@ -57,5 +57,7 @@
 	<classpathentry kind="lib" path="D:/poi-bin-3.17-20170915/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="lib" path="D:/poi-bin-3.17-20170915/poi-3.17/poi-scratchpad-3.17.jar"/>
 	<classpathentry kind="lib" path="D:/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/extentreports-2.41.0.jar"/>
+	<classpathentry kind="lib" path="D:/freemarker-2.3.23.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
